@@ -13,7 +13,6 @@ void MyTestClientHandler::handleClient(int input_stream) {
     read(input_stream, buffer, 1024);
     while (strcmp(buffer, "end\n") != 0) {
         string prob = convertToString(buffer, 1024);
-        cout<<"prob:"<<prob;
         string sol;
         if(cm->doesHaveSol(prob)) {
             sol = cm->getSol(prob);
@@ -22,7 +21,6 @@ void MyTestClientHandler::handleClient(int input_stream) {
             sol = solver->solve(prob);
             cm->setSol(prob, sol);
         }
-        cout<<"sol:"<<sol<<endl;
         send(input_stream, sol.c_str(), strlen(sol.c_str()), 0);
         read(input_stream, buffer, 1024);
     }
