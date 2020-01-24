@@ -50,7 +50,7 @@ void MySerialServer::open(int port, ClientHandler* c) {
 	}
 	// thread creation
 	std::thread server_thread(runServer, this, socketfd, c, address);
-	server_thread.join();
+	server_thread.detach();
 }
 
 
