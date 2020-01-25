@@ -10,8 +10,8 @@ bool State<T>::operator==(const State<T> &s) const {
 }
 
 template<class T>
-list<T> State<T>::BacktracePath() const {
-  list<T> path;
+list<pair<T, double>> State<T>::BacktracePath() const {
+  list<pair<T, double>> path;
 
   if (this->previous_state != nullptr) {
     // Backtraces the path until the previous state.
@@ -19,6 +19,6 @@ list<T> State<T>::BacktracePath() const {
   }
 
   // Adds this state to the path.
-  path.push_back(this->state);
+  path.push_back({this->state, this->cost});
   return path;
 }

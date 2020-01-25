@@ -15,7 +15,7 @@ class State {
  public:
   // Input: s - The state
   // Constructs a state.
-  State(T s): state(s), previous_state(nullptr) {}
+  State(T s): state(s), previous_state(nullptr), cost(0) {}
 
   // Input: s - A state
   // Output: True or false whether this state is equal to the other state.
@@ -41,7 +41,7 @@ class State {
 
   // Output: The path leads to this state.
   // Backtraces that path and returns it.
-  list<T> BacktracePath() const;
+  list<pair<T, double>> BacktracePath() const;
 
  private:
   T state;
