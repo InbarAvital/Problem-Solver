@@ -14,7 +14,7 @@ class Searcher {
   // Input: searchable - A searching problem.
   // Output: A solution for this problem.
   // Solves the searching problem and returns (one of) its solution(s).
-  virtual string search(Searchable<T> searchable) = 0;
+  virtual list<State<T>> search(Searchable<T> searchable) = 0;
 
   // Output: The number of nodes evaluated during the searching process.
   virtual int GetNumberOfNodesEvaluated() = 0;
