@@ -12,11 +12,4 @@ int server_side::boot::Main::main(int argc, char **argv) {
     MySerialServer server;
     server.open(port, handler);
     return argc;
-    algorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.h
-        algorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.halgorithms/MinPriorityQueue.h
 }
