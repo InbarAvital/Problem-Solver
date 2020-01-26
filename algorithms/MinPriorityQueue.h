@@ -6,30 +6,6 @@
 #define EX4_ALGORITHMS_MINPRIORITYQUEUE_H_
 
 #include <queue>
-thisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoaddthisissomethingtoaddthisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoaddthisissomethingtoadd
-thisissomethingtoaddthisissomethingtoadd
-thisissomethingtoaddthisissomethingtoaddthisissomethingtoaddthisissomethingtoaddthisissomethingtoadd
-thisissomethingtoaddthisissomethingtoaddthisissomethingtoaddthisissomethingtoadd
-thisissomethingtoadd
-
-
-thisissomethingtoaddthisissomethingtoaddthisissomethingtoadd
-thisissomethingtoadd
-
-
-thisissomethingtoadd
-
-
-thisissomethingtoaddthisissomethingtoaddthisissomethingtoadd
-thisissomethingtoadd
-thisissomethingtoadd
 using namespace std;
 
 // A priority queue (min heap) that supports updating values.
