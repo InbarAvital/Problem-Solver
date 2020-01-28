@@ -18,7 +18,7 @@ void AlgorithmsTester::Test(const string &matrices_file_name) {
   this->TestAlgorithmOnMatrices(new Astar<string, ManhattanDistanceHeuristic>(), matrices, "A_Star.csv");
 }
 
-list<MatrixRouteSearchable> AlgorithmsTester::LoadMatrices(const string &input_file_name) {
+list<MatrixRouteSearchable*> AlgorithmsTester::LoadMatrices(const string &input_file_name) {
   ifstream input_file;
 
   // Opens the file with the matrices.
@@ -28,7 +28,7 @@ list<MatrixRouteSearchable> AlgorithmsTester::LoadMatrices(const string &input_f
   }
 
   MatrixGenerator matrix_generator;
-  list<MatrixRouteSearchable> matrices;
+  list<MatrixRouteSearchable*> matrices;
 
   // Reads The lines in the file.
   while (!input_file.eof()) {
@@ -50,7 +50,7 @@ list<MatrixRouteSearchable> AlgorithmsTester::LoadMatrices(const string &input_f
   return matrices;
 }
 
-void AlgorithmsTester::TestAlgorithmOnMatrices(Searcher<string> *algorithm, list<MatrixRouteSearchable> matrices, const string &output_file_name) {
+void AlgorithmsTester::TestAlgorithmOnMatrices(Searcher<string> *algorithm, list<MatrixRouteSearchable*> matrices, const string &output_file_name) {
   ofstream output_file;
 
   // Opens a file for the algorithm results.
@@ -62,15 +62,15 @@ void AlgorithmsTester::TestAlgorithmOnMatrices(Searcher<string> *algorithm, list
   // Solves every matrix problem.
   for (auto matrix_problem : matrices) {
     // Searches for a solution route using the algorithm.
-    matrix_problem.GetReadyToSearch();
+    matrix_problem->GetReadyToSearch();
     algorithm->Reset();
-    list<State<string>*> route = algorithm->Search(&matrix_problem);
+    list<State<string>*> route = algorithm->Search(matrix_problem);
 
     // Gets the number of evaluated nodes in the algorithm execution.
     int evaluated_nodes = algorithm->GetNumberOfNodesEvaluated();
 
     // Gets the size of the matrix.
-    int matrix_size = matrix_problem.GetRows();
+    int matrix_size = matrix_problem->GetRows();
 
     // Writes the results to the file.
     output_file << matrix_size << "," << evaluated_nodes << endl;

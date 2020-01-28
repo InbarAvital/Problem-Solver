@@ -44,11 +44,6 @@ class Point {
   string GetDirectionToPoint(Point point);
 
  private:
-  // Input: str - The string to split.
-  //        split_by - The delimiter to split by.
-  // Output:  A vector of strings from the given string, after splitting it.
-  static vector<string> Split(string str, string split_by);
-
   int x_val;
   int y_val;
 };

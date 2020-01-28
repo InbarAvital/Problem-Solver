@@ -10,13 +10,7 @@
 // Generator of matrix rote searchable object.
 class MatrixGenerator {
  public:
-  MatrixRouteSearchable GenerateMatrix(const string &matrix_data);
-
- private:
-  // Input: str - The string to split.
-  //        split_by - The delimiter to split by.
-  // Output:  A vector of strings from the given string, after splitting it.
-  static vector<string> Split(string str, string split_by);
+  MatrixRouteSearchable *GenerateMatrix(const string &matrix_data);
 };
 
 #endif //EX4_ALGORITHMS_MATRIXGENERATOR_H_

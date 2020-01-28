@@ -15,8 +15,8 @@ class AlgorithmsTester {
  public:
   void Test(const string &matrices_file_name);
  private:
-  list<MatrixRouteSearchable> LoadMatrices(const string &input_file_name);
-  void TestAlgorithmOnMatrices(Searcher<string> *algorithm, list<MatrixRouteSearchable> matrices, const string &output_file_name);
+  list<MatrixRouteSearchable*> LoadMatrices(const string &input_file_name);
+  void TestAlgorithmOnMatrices(Searcher<string> *algorithm, list<MatrixRouteSearchable*> matrices, const string &output_file_name);
 };
 
 #endif //EX4_MATRICES_ALGORITHMSTESTER_H_

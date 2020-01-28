@@ -30,8 +30,7 @@ class MatrixRouteSearchable : public Searchable<string> {
   // Output: A string represents the route.
   static string RouteToString(list<State<string>*> route);
 
-  // Updates the heuristic functions to solve this routing problem.
-  void GetReadyToSearch();
+  void GetReadyToSearch() override;
 
   // Output: The number of rows in the matrix.
   int GetRows();
