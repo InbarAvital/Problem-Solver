@@ -15,15 +15,16 @@ class State {
  public:
   // Input: s - The state
   // Constructs a state.
-  State(T s): state(s), previous_state(nullptr), cost(0) {}
+  explicit State(T s): state(s), previous_state(nullptr), cost(0) {}
+
+  // Input: s - The state
+  //        c - Its cost.
+  // Constructs a state with that cost.
+  State(T s, double c): state(s), previous_state(nullptr), cost(c) {}
 
   // Input: s - A state
   // Output: True or false whether this state is equal to the other state.
   bool operator==(const State<T> &s) const;
-
-  // Input: s - A state
-  // Output: True or false whether this state's cost is larger than the other state's cost.
-  bool operator>(const State<T> &s) const;
 
   // Returns this state.
   T GetState() const {
@@ -45,7 +46,7 @@ class State {
 
   // Output: The path leads to this state.
   // Backtraces that path and returns it.
-  list<State<T>> BacktracePath() const;
+  list<State<T>*> BacktracePath();
 
  private:
   T state;
@@ -59,8 +60,8 @@ bool State<T>::operator==(const State<T> &s) const {
 }
 
 template<class T>
-list<State<T>> State<T>::BacktracePath() const {
-  list<State<T>> path;
+list<State<T>*> State<T>::BacktracePath() {
+  list<State<T>*> path;
 
   if (this->previous_state != nullptr) {
     // Backtraces the path until the previous state.
@@ -68,13 +69,8 @@ list<State<T>> State<T>::BacktracePath() const {
   }
 
   // Adds this state to the path.
-  path.push_back(*this);
+  path.push_back(this);
   return path;
-}
-
-template<class T>
-bool State<T>::operator>(const State<T> &s) const {
-  return this->cost > s.cost;
 }
 
 #endif //EX4__STATE_H_

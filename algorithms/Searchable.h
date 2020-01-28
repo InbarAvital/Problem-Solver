@@ -12,16 +12,16 @@ template <class T>
 class Searchable {
  public:
   // Output:  The initial state of this search problem.
-  virtual State<T> GetInitialState() = 0;
+  virtual State<T> *GetInitialState() = 0;
 
   // Input: state - A state in our universe of states.
   // Output:  True or false whether that state is a goal of this problem or not.
   // Checks if this state is a goal state.
-  virtual bool IsGoalState(State<T> state) = 0;
+  virtual bool IsGoalState(State<T> *state) = 0;
 
   // Input: state - A state in our universe of states.
   // Output:  A list of that state's successors.
-  virtual list<State<T>> GetAllPossibleStates(State<T> state) = 0;
+  virtual list<State<T>*> GetAllPossibleStates(State<T> *state) = 0;
 };
 
 #endif //EX4__SEARCHABLE_H_
