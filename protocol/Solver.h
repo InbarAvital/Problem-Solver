@@ -7,7 +7,7 @@ template<typename PROB, typename SOL>
 class Solver
 {
 public:
-    virtual SOL solve(PROB) = 0;
+    virtual SOL solve(PROB prob) = 0;
     virtual ~Solver(){};
 };
 #endif
