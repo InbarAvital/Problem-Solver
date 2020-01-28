@@ -9,7 +9,7 @@
 
 void AlgorithmsTester::Test(const string &matrices_file_name) {
   // Loads the matrices.
-  list<MatrixRouteSearchable> matrices = this->LoadMatrices(matrices_file_name);
+  list<MatrixRouteSearchable*> matrices = this->LoadMatrices(matrices_file_name);
 
   // Tests the algorithms.
   this->TestAlgorithmOnMatrices(new BreadthFirstSearch<string>(), matrices, "Breadth_First_Search.csv");
