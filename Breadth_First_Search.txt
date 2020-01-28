@@ -1,0 +1,40 @@
+Matrix size: 10x10
+Path: Down (10) ,Down (10) ,Down (14) ,Down (21) ,Down (23) ,Down (25) ,Down (33) ,Down (40) ,Right (49) ,Right (53) ,Right (58) ,Right (59) ,Right (65) ,Right (65) ,Right (68) ,Down (71) ,Right (73) ,Right (82)
+Evaluated nodes: 111
+
+Matrix size: 14x14
+Path: Down (7) ,Down (15) ,Down (19) ,Down (22) ,Down (22) ,Down (22) ,Down (22) ,Down (23) ,Down (23) ,Down (24) ,Down (29) ,Down (35) ,Right (38) ,Right (41) ,Right (49) ,Right (56) ,Right (59) ,Right (65) ,Right (65) ,Right (67) ,Right (76) ,Right (83) ,Right (86) ,Right (91) ,Right (91) ,Down (99)
+Evaluated nodes: 239
+
+Matrix size: 18x18
+Path: Down (5) ,Down (13) ,Down (15) ,Down (24) ,Right (28) ,Down (32) ,Down (39) ,Down (39) ,Down (41) ,Down (45) ,Down (46) ,Down (50) ,Down (54) ,Down (59) ,Down (62) ,Down (66) ,Down (74) ,Right (83) ,Right (92) ,Right (98) ,Right (99) ,Right (105) ,Right (112) ,Right (121) ,Right (123) ,Right (124) ,Right (125) ,Right (133) ,Right (135) ,Right (140) ,Right (141) ,Down (150) ,Right (155) ,Right (163)
+Evaluated nodes: 351
+
+Matrix size: 22x22
+Path: Down (9) ,Down (12) ,Down (20) ,Right (26) ,Down (31) ,Down (37) ,Down (44) ,Right (51) ,Down (58) ,Down (67) ,Down (71) ,Right (72) ,Down (78) ,Down (78) ,Down (79) ,Down (83) ,Down (87) ,Down (91) ,Down (96) ,Down (98) ,Down (106) ,Down (107) ,Right (114) ,Right (119) ,Right (124) ,Right (130) ,Right (131) ,Right (139) ,Down (140) ,Down (141) ,Right (145) ,Right (152) ,Right (161) ,Right (161) ,Right (164) ,Right (170) ,Right (174) ,Right (176) ,Right (182) ,Right (191) ,Right (199) ,Right (206)
+Evaluated nodes: 883
+
+Matrix size: 26x26
+Path: Down (2) ,Down (6) ,Down (14) ,Down (15) ,Down (20) ,Down (20) ,Down (29) ,Down (37) ,Down (40) ,Down (44) ,Down (51) ,Down (56) ,Down (62) ,Down (71) ,Down (79) ,Down (85) ,Right (93) ,Down (99) ,Down (106) ,Down (113) ,Right (117) ,Right (122) ,Right (129) ,Right (133) ,Down (142) ,Right (147) ,Right (154) ,Right (158) ,Right (163) ,Down (172) ,Down (174) ,Right (174) ,Right (183) ,Right (189) ,Right (196) ,Right (202) ,Right (207) ,Right (209) ,Right (209) ,Right (212) ,Right (213) ,Right (214) ,Right (215) ,Down (217) ,Down (226) ,Right (228) ,Right (228) ,Right (237) ,Right (238) ,Down (241)
+Evaluated nodes: 993
+
+Matrix size: 30x30
+Path: Down (8) ,Down (10) ,Down (11) ,Down (19) ,Down (25) ,Down (27) ,Right (35) ,Right (40) ,Down (44) ,Down (49) ,Down (52) ,Down (55) ,Down (60) ,Down (67) ,Down (70) ,Down (77) ,Down (85) ,Down (94) ,Down (96) ,Down (97) ,Down (102) ,Down (111) ,Down (111) ,Right (115) ,Down (118) ,Down (124) ,Down (128) ,Down (128) ,Right (128) ,Right (128) ,Right (136) ,Right (137) ,Right (143) ,Right (146) ,Right (154) ,Right (162) ,Right (168) ,Right (177) ,Right (179) ,Right (186) ,Right (195) ,Right (203) ,Down (207) ,Down (209) ,Right (217) ,Right (223) ,Right (231) ,Right (233) ,Right (240) ,Right (248) ,Right (255) ,Right (264) ,Down (271) ,Down (273) ,Right (276) ,Right (281) ,Right (288) ,Right (290)
+Evaluated nodes: 1482
+
+Matrix size: 34x34
+Path: Right (15) ,Down (15) ,Down (18) ,Down (25) ,Down (26) ,Down (29) ,Down (31) ,Down (39) ,Down (48) ,Down (50) ,Down (57) ,Down (63) ,Down (69) ,Down (70) ,Down (71) ,Down (74) ,Down (80) ,Down (83) ,Down (89) ,Right (89) ,Right (95) ,Down (104) ,Down (109) ,Down (113) ,Down (115) ,Down (124) ,Right (128) ,Down (136) ,Right (143) ,Down (152) ,Down (158) ,Down (163) ,Right (163) ,Right (167) ,Right (169) ,Down (175) ,Right (180) ,Right (189) ,Right (191) ,Right (193) ,Right (202) ,Right (207) ,Right (215) ,Right (221) ,Right (226) ,Right (235) ,Right (242) ,Right (247) ,Right (247) ,Right (253) ,Right (261) ,Right (266) ,Right (267) ,Right (274) ,Right (277) ,Right (279) ,Down (288) ,Down (295) ,Down (301) ,Down (305) ,Right (313) ,Right (321) ,Right (325) ,Right (325) ,Right (329) ,Down (334)
+Evaluated nodes: 1762
+
+Matrix size: 38x38
+Path: Down (8) ,Down (17) ,Right (25) ,Down (29) ,Down (29) ,Down (35) ,Right (38) ,Down (47) ,Down (55) ,Down (55) ,Down (55) ,Down (63) ,Down (65) ,Down (68) ,Down (77) ,Down (84) ,Down (84) ,Down (84) ,Down (87) ,Down (87) ,Down (89) ,Down (89) ,Down (93) ,Down (102) ,Down (102) ,Right (108) ,Down (115) ,Down (115) ,Down (121) ,Down (126) ,Down (131) ,Down (137) ,Down (141) ,Down (145) ,Down (149) ,Down (153) ,Right (157) ,Right (164) ,Right (170) ,Right (177) ,Right (179) ,Down (180) ,Right (180) ,Right (184) ,Right (184) ,Right (186) ,Right (188) ,Right (195) ,Right (195) ,Right (199) ,Down (204) ,Down (211) ,Right (218) ,Right (226) ,Right (233) ,Right (241) ,Right (247) ,Right (248) ,Right (257) ,Right (258) ,Right (263) ,Right (269) ,Right (272) ,Right (280) ,Right (283) ,Right (288) ,Right (291) ,Down (299) ,Right (301) ,Right (308) ,Right (311) ,Right (320) ,Right (328) ,Right (328)
+Evaluated nodes: 2953
+
+Matrix size: 42x42
+Path: Down (16) ,Right (17) ,Down (26) ,Down (30) ,Down (36) ,Down (43) ,Down (50) ,Down (52) ,Down (56) ,Down (63) ,Down (66) ,Down (71) ,Down (79) ,Down (87) ,Down (87) ,Down (92) ,Down (96) ,Down (103) ,Down (106) ,Down (106) ,Down (113) ,Down (114) ,Down (114) ,Down (114) ,Right (116) ,Down (122) ,Right (127) ,Down (133) ,Down (137) ,Down (143) ,Down (149) ,Down (155) ,Down (159) ,Down (160) ,Right (160) ,Down (166) ,Down (168) ,Down (168) ,Down (170) ,Down (178) ,Down (182) ,Down (182) ,Down (186) ,Down (187) ,Right (192) ,Right (192) ,Right (196) ,Right (202) ,Right (209) ,Right (215) ,Right (221) ,Right (221) ,Right (226) ,Right (235) ,Right (235) ,Right (235) ,Right (241) ,Right (245) ,Right (252) ,Right (253) ,Right (256) ,Right (259) ,Right (263) ,Right (271) ,Right (277) ,Right (280) ,Right (287) ,Right (288) ,Right (293) ,Right (293) ,Right (296) ,Right (305) ,Right (305) ,Right (312) ,Right (312) ,Right (312) ,Right (321) ,Right (326) ,Right (335) ,Right (343) ,Down (343) ,Right (344)
+Evaluated nodes: 3479
+
+Matrix size: 46x46
+Path: Right (8) ,Down (9) ,Down (17) ,Down (22) ,Down (24) ,Down (32) ,Down (37) ,Down (45) ,Down (51) ,Down (54) ,Down (60) ,Down (62) ,Down (67) ,Down (68) ,Down (76) ,Down (83) ,Down (85) ,Down (86) ,Down (86) ,Down (91) ,Down (91) ,Down (98) ,Down (102) ,Down (108) ,Down (113) ,Down (119) ,Down (119) ,Down (124) ,Down (133) ,Down (134) ,Down (140) ,Down (149) ,Down (158) ,Down (162) ,Right (166) ,Down (174) ,Down (182) ,Down (190) ,Down (191) ,Down (200) ,Down (206) ,Down (214) ,Right (215) ,Right (223) ,Right (232) ,Right (241) ,Right (250) ,Right (250) ,Right (257) ,Right (265) ,Right (270) ,Right (275) ,Right (278) ,Right (286) ,Right (292) ,Down (296) ,Right (301) ,Down (307) ,Right (313) ,Right (320) ,Right (327) ,Right (327) ,Down (327) ,Right (328) ,Right (330) ,Right (337) ,Right (343) ,Right (343) ,Right (349) ,Down (354) ,Right (354) ,Right (363) ,Right (365) ,Right (365) ,Right (371) ,Right (379) ,Right (385) ,Right (391) ,Right (395) ,Right (400) ,Right (401) ,Right (410) ,Down (416) ,Right (417) ,Right (417) ,Right (424) ,Right (432) ,Right (437) ,Right (445) ,Right (450)
+Evaluated nodes: 4849
+
