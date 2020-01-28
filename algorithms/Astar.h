@@ -9,14 +9,14 @@
 #include "StateCostPlusHeuristicComparator.h"
 
 // A* searching algorithm with a heuristic function H.
-template <class T, class H>
-class Astar : public PriorityQueueBasedSearcher<T, StateCostPlusHeuristicComparator<T, H>> {
+template <class T>
+class Astar : public PriorityQueueBasedSearcher<T, StateCostPlusHeuristicComparator<T>> {
  public:
   list<State<T>*> Search(Searchable<T> *searchable) override;
 };
 
-template <class T, class H>
-list<State<T>*> Astar<T, H>::Search(Searchable<T> *searchable) {
+template <class T>
+list<State<T>*> Astar<T>::Search(Searchable<T> *searchable) {
   this->AddToOpenList(searchable->GetInitialState());
   unordered_map<T, State<T>*> closed;
 

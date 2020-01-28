@@ -22,9 +22,6 @@ class Searchable {
   // Input: state - A state in our universe of states.
   // Output:  A list of that state's successors.
   virtual list<State<T>*> GetAllPossibleStates(State<T> *state) = 0;
-
-  // Initializes stuff before search if needed.
-  virtual void GetReadyToSearch() {}
 };
 
 #endif //EX4__SEARCHABLE_H_

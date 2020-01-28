@@ -24,6 +24,7 @@ void MySerialServer::open(int port, ClientHandler* c) {
 	// timeout
     struct timeval tv;
     tv.tv_sec = TIME;
+    tv.tv_usec = 0;
     setsockopt(socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 	//bind socket to IP address
 	// we first need to create the sockaddr obj.
@@ -50,7 +51,7 @@ void MySerialServer::open(int port, ClientHandler* c) {
 	}
 	// thread creation
 	std::thread server_thread(runServer, this, socketfd, c, address);
-	server_thread.detach();
+	server_thread.join();
 }
 
 
@@ -65,10 +66,12 @@ void MySerialServer::runServer(MySerialServer *server, int socketfd, ClientHandl
                                    (socklen_t*)&address);
 
         if (client_socket == -1) {
-            std::cerr << "Error accepting client" << std::endl;
-            exit(1);
+          // Reached time-out.
+          server->stop();
+          break;
         }
         c->handleClient(client_socket);
         close(client_socket); // Closes the socket when finish.
     }
+    close(socketfd);
 }

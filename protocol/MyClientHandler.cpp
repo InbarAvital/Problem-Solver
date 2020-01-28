@@ -23,7 +23,7 @@ void MyClientHandler::handleClient(int input_stream) {
     // Splits the client message to lines.
     vector<string> lines = Utility::Split(message, "\n");
     for (auto line : lines) {
-      if (line != "end") {
+      if (line == "end") {
         // Finished reading lines of problem.
         should_stop = true;
         break;

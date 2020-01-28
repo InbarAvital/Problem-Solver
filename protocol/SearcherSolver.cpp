@@ -12,7 +12,6 @@ string SearcherSolver::solve(string problem) {
   Searchable<string> *searchable = matrix_generator.GenerateMatrix(problem);
 
   // Solves the searchable.
-  searchable->GetReadyToSearch();
   this->searcher->Reset();
   list<State<string>*> route = this->searcher->Search(searchable);
 

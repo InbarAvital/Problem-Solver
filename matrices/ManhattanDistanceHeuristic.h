@@ -12,17 +12,15 @@
 class ManhattanDistanceHeuristic {
  public:
   // Input: goal - A goal position coordinates.
-  // Sets the goal position for Manhattan Distance Heuristic.
-  static void SetGoalPoint(Point goal) {
-    ManhattanDistanceHeuristic::goal_point = goal;
-  }
+  // Constructs a Manhattan Distance Heuristic with that goal position.
+  explicit ManhattanDistanceHeuristic(Point goal): goal_point(goal) {}
 
   // Input: str_point - A string represents point.
   // Output:  The heuristic value of that point.
   double operator()(const string &str_point);
 
  private:
-  static Point goal_point;
+  Point goal_point;
 };
 
 #endif //EX4_ALGORITHMS_MANHATTANDISTANCEHEURISTIC_H_

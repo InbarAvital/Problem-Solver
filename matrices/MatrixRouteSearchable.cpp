@@ -48,8 +48,10 @@ list<State<string>*> MatrixRouteSearchable::GetAllPossibleStates(State<string> *
   if (x > 0) {
     // Not on the upper row.
     if (this->matrix[x - 1][y] != -1) {
-      State<string> *successor = new State<string>(Point(x - 1, y).ToString());
+      string upper_point(Point(x - 1, y).ToString());
+      State<string> *successor = new State<string>(upper_point);
       successor->SetPreviousState(state, this->matrix[x - 1][y]);
+      successor->SetHeuristicCost(this->heuristic_function(upper_point));
       successors.push_back(successor);
     }
   }
@@ -57,8 +59,10 @@ list<State<string>*> MatrixRouteSearchable::GetAllPossibleStates(State<string> *
   if (x < this->column_length - 1) {
     // Not on the lower row.
     if (this->matrix[x + 1][y] != -1) {
-      State<string> *successor = new State<string>(Point(x + 1, y).ToString());
+      string lower_point(Point(x + 1, y).ToString());
+      State<string> *successor = new State<string>(lower_point);
       successor->SetPreviousState(state, this->matrix[x + 1][y]);
+      successor->SetHeuristicCost(this->heuristic_function(lower_point));
       successors.push_back(successor);
     }
   }
@@ -66,8 +70,10 @@ list<State<string>*> MatrixRouteSearchable::GetAllPossibleStates(State<string> *
   if (y > 0) {
     // Not on the left column.
     if (this->matrix[x][y - 1] != -1) {
-      State<string> *successor = new State<string>(Point(x, y - 1).ToString());
+      string left_point(Point(x, y - 1).ToString());
+      State<string> *successor = new State<string>(left_point);
       successor->SetPreviousState(state, this->matrix[x][y - 1]);
+      successor->SetHeuristicCost(this->heuristic_function(left_point));
       successors.push_back(successor);
     }
   }
@@ -75,8 +81,10 @@ list<State<string>*> MatrixRouteSearchable::GetAllPossibleStates(State<string> *
   if (y < this->row_length - 1) {
     // Not on the right column.
     if (this->matrix[x][y + 1] != -1) {
-      State<string> *successor = new State<string>(Point(x, y + 1).ToString());
+      string right_point(Point(x, y + 1).ToString());
+      State<string> *successor = new State<string>(right_point);
       successor->SetPreviousState(state, this->matrix[x][y + 1]);
+      successor->SetHeuristicCost(this->heuristic_function(right_point));
       successors.push_back(successor);
     }
   }
@@ -88,6 +96,6 @@ int MatrixRouteSearchable::GetRows() {
   return this->matrix.size();
 }
 
-void MatrixRouteSearchable::GetReadyToSearch() {
-  ManhattanDistanceHeuristic::SetGoalPoint(this->goal_point);
+int MatrixRouteSearchable::GetColumns() {
+  return this->matrix[0].size();
 }

@@ -18,7 +18,8 @@ class MatrixRouteSearchable : public Searchable<string> {
   //        initial - The initial position on the matrix.
   //        goal - The goal position on the matrix.
   MatrixRouteSearchable(vector<vector<int>> mat, Point initial, Point goal):
-      matrix(std::move(mat)), row_length(matrix[0].size()), column_length(matrix.size()), initial_point(initial), goal_point(goal) {}
+      matrix(std::move(mat)), row_length(matrix[0].size()), column_length(matrix.size()), initial_point(initial),
+      goal_point(goal), heuristic_function(ManhattanDistanceHeuristic(goal)) {}
 
   State<string> *GetInitialState() override;
 
@@ -29,11 +30,12 @@ class MatrixRouteSearchable : public Searchable<string> {
   // Input: route - A list of state represent a route in the matrix.
   // Output: A string represents the route.
   static string RouteToString(list<State<string>*> route);
-
-  void GetReadyToSearch() override;
-
+  
   // Output: The number of rows in the matrix.
   int GetRows();
+
+  // Output: The number of columns in the matrix.
+  int GetColumns();
 
  private:
   vector<vector<int>> matrix;
@@ -41,6 +43,7 @@ class MatrixRouteSearchable : public Searchable<string> {
   int column_length;
   Point initial_point;
   Point goal_point;
+  ManhattanDistanceHeuristic heuristic_function;
 };
 
 #endif //EX4_ALGORITHMS_MATRIXROUTESEARCHABLE_H_
